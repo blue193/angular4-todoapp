@@ -12,6 +12,7 @@ import { PersonComponent } from './person/person.component';
 import { routeConfig } from './app.routes';
 import { PeopleService } from './service/people.service';
 import { PersonResolver } from './resolvers/person.resolver';
+import { CapitalPipePipe } from './capital-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PersonResolver } from './resolvers/person.resolver';
     GuideComponent,
     PeopleComponent,
     HomeComponent,
-    PersonComponent
+    PersonComponent,
+    CapitalPipePipe
   ],
   imports: [
     BrowserModule,

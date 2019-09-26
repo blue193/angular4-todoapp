@@ -11,11 +11,11 @@ export class PersonComponent implements OnInit {
   person: any;
 
   constructor(
-    private _activateRoute: ActivatedRoute
+    private _activatedRoute: ActivatedRoute
   ) { }
 
   ngOnInit() {
-    this.person = this._activateRoute.snapshot.data['person'];
+    this.person = this._activatedRoute.snapshot.data['person'];
     console.log('person data = ', this.person)
   }
 
