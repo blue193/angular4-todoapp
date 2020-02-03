@@ -9,9 +9,9 @@ export class PeopleService {
 
   constructor() { 
     this.people = [
-      { id: 1, name: 'James1'},
-      { id: 2, name: 'James2'},
-      { id: 3, name: 'James3'}
+      { id: 1, name: 'james1'},
+      { id: 2, name: 'james2'},
+      { id: 3, name: 'kames3'}
     ]
   }
 

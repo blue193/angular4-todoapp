@@ -14,6 +14,8 @@ import { PeopleService } from './service/people.service';
 import { PersonResolver } from './resolvers/person.resolver';
 import { CapitalPipePipe } from './capital-pipe.pipe';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,8 @@ import { CapitalPipePipe } from './capital-pipe.pipe';
   ],
   imports: [
     BrowserModule,
-    // AppRoutingModule,
+    HttpClientModule,
+    AppRoutingModule,
     RouterModule.forRoot(routeConfig, {
       useHash: false,
       enableTracing: false
